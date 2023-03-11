@@ -1,0 +1,747 @@
+:root {
+    --veryLightGray: #F2F2F2;
+    --orangeBg: #FF7845;
+    --redBg: #B70807;
+    --lightRed:  #FF576B;
+    --whiteNat: #ffffff;
+    --blackishBg: #083a55;
+    --lightBlue: #083A55;
+    --lightGray: #596869;
+    --blackNat: #000000;
+    --hotPurple: #9e13c0;
+    --dullYellow: #b76800;
+    --palGreen: #417505;
+    --palBlue: #003183;
+    --primaryFontFamily: 'Ubuntu', sans-serif;
+    --secondaryFontFamily: 'Ubuntu Condensed', sans-serif;
+    --tertiaryFontFamily: 'Ubuntu Mono', monospace;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--whiteNat);
+    font-family: var(--primaryFontFamily);
+    min-height: 100vh;
+}
+
+section .header {
+    text-align: center !important;
+    padding: 10px;
+    color: var(--lightBlue);
+    font-size: 4rem;
+    font-family: var(--primaryFontFamily);
+}
+
+.testimonial-wrapper, .our-programs-wrapper, .mission-outreach-wrapper, .video-wrapper, .footer-wrapper {
+    width: calc(100% - 100px);
+    position: relative;
+    margin: auto;
+    scroll-behavior: smooth;
+}
+
+/*************** NAVBAR STYLING STARTS ***************/
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--veryLightGray);
+    font-family: var(--secondaryFontFamily);
+    padding-bottom: 10px;
+    padding: 10px;
+}
+
+header img {
+    padding: 10px;
+    height: 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: column wrap;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    list-style: none;
+    margin: auto; 
+    padding: 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--lightGray);
+    font-size: 1rem;
+    margin: auto;
+    
+}
+
+.navbar a:hover, .navbar a:focus {
+    color: var(--blackNat);
+    flex-grow: 3;
+}
+
+.navbar-items {
+    padding-right: 10px;
+}
+
+#donate {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1.3rem;
+    margin: 0 3rem;
+    margin-top: 0.3rem;
+    background-color: var(--lightRed);
+    color: var(--whiteNat);
+    font-size: 110%;
+    letter-spacing: 1px;
+}
+
+#donate:hover, #donate:focus {
+    background-color: #df122aee;
+}
+
+.social-icons {
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.social-icons ion-icon {
+    /* I used icons from https://ionic.io/ionicons */
+    padding: 5px;
+    margin-left: 20px;
+    margin-top: 0.5rem;
+    color: var(--lightBlue);
+    border: 1px solid var(--lightBlue);
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.social-icons ion-icon:hover {
+    color: var(--redBg);
+    border-color: var(--redBg);
+}
+
+/*************** NAVBAR STYLING ENDS ***************/
+
+/*************** MAIN ARTICLE STYLING STARTS ***************/
+
+.main-article h3 {
+    text-align: center;
+    color: var(--whiteNat);
+    background-color: var(--lightBlue);
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+    padding: 12px 0;
+    font-family: var(--tertiaryFontFamily);
+    font-size: 1.3rem;
+}
+
+/********** CAROUSEL SLIDE **********/
+.carousel {
+    outline: 2px red solid;
+    /* max-width: 1000px; */
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+/******** NEXT AND PREVIOUS BUTTON STYLING ********/
+.previous, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -12px;
+    padding: 25px;
+    color: var(--whiteNat);
+    font-weight: 700;
+    font-size: 2.5rem;
+    transition: 0.5s ease;
+    border-radius: 0 3px 3px 0;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+/*********** MOVE THE NEXT BUTTON TO RIGHT **************/
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/*********** On hover, add a black background color with a little bit see-through **************/
+.previous:hover, .next:hover {
+    background-color: #00000060;
+}
+
+.dot {
+    text-align: center;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    display: inline-block;
+    background-color: var(--lightGray);
+    border-radius: 50%;
+}
+
+/********** Will comeback to the carousel *********/
+
+/********** MISSION / VISION STYLING STARTS*************/
+.mission_vision {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-family: var(--primaryFontFamily);
+    margin: 0 auto;
+}
+
+#mission_vision-img {
+    position: relative;
+    max-width: 50%;
+    padding: 10px 0;
+}
+
+#mission_vision-img img{
+    position: relative;
+    image-rendering: auto;
+    object-fit: cover;
+    height: 449px;
+    width: 90%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+#mission_vision-img .background {
+    background-color: var(--lightBlue);
+    position: absolute;
+    height: 440px;
+    width: calc(90% + 10px); /* adds 10px to the 90% width */
+    top: 30px;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 10px 30px 60px -15px rgb(0 0 0 / 50%);
+}
+
+.our_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    text-align: justify;
+    max-width: 500px;
+    padding: 0 10px;
+    color: var(--lightBlue);
+}
+
+#mission {
+    margin-top: 40px;
+}
+
+/********** MISSION / VISION STYLING ENDS*************/
+
+/********OUTREACH STYLING STARTS**********/
+
+.outreach {
+    margin-top: 150px;
+    max-width: 1490px;
+    display: flex;
+    flex-direction: column;
+}
+
+.our_main h3 {
+    font-size: 2rem;
+    font-family: var(--secondaryFontFamily);
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+
+.outreach-details {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 60px;
+    padding-bottom: 3rem;
+}
+
+.details {
+    width: 200px;
+    text-align: center;
+    padding: 5px;
+}
+
+.details h4 {
+    font-size: 1.7rem;
+    font-family: var(--secondaryFontFamily);
+    padding-top: 30px;
+    margin-bottom: 10px;
+    letter-spacing: 1.5px;
+}
+
+.details p {
+    font-size: 1rem;
+    font-family: var(--primaryFontFamily);
+}
+
+.details ion-icon {
+    font-size: 3rem;
+    padding: 40px;
+    border: 1px solid;
+    border-radius: 50%;
+    color: var(--whiteNat)
+}
+
+.beneficiary ion-icon {
+    border: none;
+    background-color:  var(--hotPurple);
+}
+
+.indirect ion-icon {
+    border: none;
+    background-color:  var(--blackishBg);
+}
+
+.state ion-icon {
+    border: none;
+    background-color:  var(--dullYellow);
+}
+
+.countries ion-icon {
+    border: none;
+    background-color:  var(--palGreen);
+}
+
+.jobs ion-icon {
+    border: none;
+    background-color:  var(--palBlue);
+}
+
+/*******OUTREACH STYLING ENDS************/
+
+.finance_cop {
+    background-image: url(./images/conference\ meeting.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.finance_cop p {
+    max-width: 1200px;
+    width: 100%;
+    text-align: justify;
+    margin: 0 auto;
+    padding: 100px;
+    color: var(--whiteNat);
+    font-family: var(--primaryFontFamily);
+    font-size: 1.5rem;
+}
+
+/*******OUTREACH STYLING ENDS************/
+
+/*******OUR PROGRAM STYLING BEGINS************/
+
+.our-programs {
+    margin-top: 45px;
+    position: relative;
+}
+
+.programs {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 10px;
+    gap: 10px;
+    flex-wrap: wrap;
+    scroll-behavior: smooth;    
+}
+
+.program {
+    display: flex;
+    flex-direction: column;
+    color: var(--blackishBg);
+    max-width: 400px;
+    border-radius: 0 0 10px 10px;
+    scroll-behavior: smooth;
+}
+
+.program div {
+    position: relative;
+    border: 1px solid #E8E8E8;
+    transition: 500ms;
+    height: calc(100% - 260px);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-radius: 0 0 10px 10px;
+}
+
+.program .learn-more a {
+    color: var(--blackishBg);
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1rem;
+    padding-left: 20px;
+    margin-top: auto;
+    cursor: pointer;
+}
+
+.program h3 {
+    padding-left: 25px;
+    padding-top: 15px;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.program .learn-more {
+    height: 50px;
+    display: flex;
+    padding: 0;
+    align-items: center;
+    margin-top: auto;
+}
+
+.program .learn-more a {
+    font-size: 1rem;
+}
+
+.program .learn-more span {
+    font-size: 1rem;
+    margin-top: 23px;
+    margin-left: 5px;
+}
+
+.program p {
+    font-size: 1rem;
+    font-family: var(--primaryFontFamily);
+    text-align: justify;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    line-height: 1.8;
+    font-size: 0.85rem;
+}
+
+.program div:hover a {
+    color: var(--whiteNat);
+}
+
+.learn-more:hover {
+    gap: 5px;
+    cursor: pointer;
+}
+
+.program div:hover {
+    color: var(--whiteNat);
+    box-shadow: 13px 2px 15px -10px var(--lightGray);
+}
+
+.program img {
+    height: 259px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.women-tec:hover div {
+    background-color: var(--hotPurple);
+}
+
+.emmi:hover div {
+    background-color: var(--orangeBg);
+}
+
+.basic-digital:hover div{
+    background-color: var(--redBg);
+}
+
+/********** OUR PROGRAMS STYLING ENDS*************/
+
+.our-partners {
+    text-align: center;
+    font-size: 5rem;
+    color: var(--lightBlue);
+    padding: 50px;
+    height: auto;
+}
+
+.contact-us {
+    background-image: url(./images/contact-us-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 100px;
+}
+
+.contact-us_para {
+    text-align: center; 
+}
+.contact-us_para p {
+    font-size: 1rem;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    color: var(--whiteNat);
+}
+
+.contact-us_para a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: var(--whiteNat);
+    background-color: var(--lightRed);
+    border-radius: 8px;
+}
+
+.contact-us_para a:hover {
+    background-color: var(--redBg);
+}
+
+.video {
+    display: flex;
+}
+
+/*******TESTIMONIAL STYLING BEGINS*******/
+
+.testimonial-contents {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    padding: 60px 20px 35px 20px;
+    padding-top: 60px;
+    position: relative;
+}
+
+.testimonial .testimonial-image {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    position: absolute;
+    object-fit: cover;
+    top: -40px;
+    left: 40%;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 60px 30px 0px 10px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--blackishBg);
+    border-radius: 7px;
+    text-align: center;
+    transition: 500ms;
+    border: 1px solid var(--veryLightGray);
+    width: 40%;
+}
+
+.testimonial-description .message {
+    padding: 5px;
+    height: 200px;
+    text-align: justify;
+    line-height: 1.8;
+    margin-top: 20px;
+}
+
+.testimonial-description .read-more {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.testimonial-description .read-more a {
+    position: relative;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--blackishBg);
+}
+
+.testimonial-description .read-more span {
+    font-size: 1.8rem;
+    margin-left: -3px;
+}
+
+.testimonial-description .read-more:hover, .testimonial-description .read-more:hover a {
+    color: var(--redBg);
+    gap: 5px;
+}
+
+.testimonial .details {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.testimonial .author {
+    color: var(--blackishBg);
+}
+
+.testimonial .description {
+    font-size: 12px;
+    color: var(--blackishBg);
+    text-align: center;
+}
+
+.testimonial:hover {
+    box-shadow: 7px 7px 5px 0 rgb(0 0 0 /20%);
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+/********FOOTER STYLING BEGINS**********/
+footer {
+    background-color: var(--blackishBg);
+    padding: 50px 5px 5px;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-details, .contact-details a {
+    color: var(--whiteNat);
+    text-decoration: none !important;
+}
+
+.contact-details a:hover {
+    text-decoration: underline !important;
+    color: var(--lightRed);
+}
+
+.contact-details .header {
+    font-family: var(--secondaryFontFamily);
+    letter-spacing: 3px;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: 10px 50px;
+}
+
+.blog-list_item {
+    padding-bottom: 20px;
+}
+
+.address-list_item {
+    padding-bottom: 11px;
+}
+
+.list-item {
+    padding: 0 50px;
+    max-width: 500px;
+}
+
+.address-list_item, .links-list_item, .blog-list_item {
+    font-size: 14px;
+    margin-top: 25px;
+    list-style: none !important;
+}
+
+.address-list_item {
+    padding: -2px ;
+}
+
+.address a {
+    font-size: 12px;
+    display: block;
+    padding: 5px 50px;
+    text-decoration: underline;
+}
+
+.footer-last-article {
+    display: flex;
+    gap: 2rem;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin-top: 50px;
+    padding: 10px 10px 20px 50px;
+}
+
+.footer-last-article .item {
+    margin-right: 220px;
+}
+
+.footer-last-article .copyright {
+    font-size: 12px;
+    color: var(--whiteNat);
+}
+
+.footer-last-article button {
+    background-color: var(--lightRed);
+    color: var(--whiteNat);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-last-article button:hover {
+    background-color: #df122aee;
+}
+
+.footer-last-article .social-icons {
+   margin-right: 0;
+}
+
+.footer-last-article .social-icons ion-icon {
+    color: var(--whiteNat);
+    outline: 1px solid;
+    font-size: 11px;
+    padding: 6px;
+}
+
+.footer-last-article .social-icons ion-icon:hover {
+    color: var(--redBg);
+    border-color: var(--redBg);
+}
+
+
+
+
+/********TAKES US BACK TO TOP*******/
+
+.back-to-top {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid #FF576B;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    outline: none;
+    z-index: 5;
+    transition: 300ms;
+    display: block;
+    border: none;
+}
+
+.back-to-top img {
+    width: 60%;
+}
+
+.back-to-top.active {
+    cursor: pointer;
+}

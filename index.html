@@ -1,0 +1,439 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+    <title>Tech4Dev Website Clone</title>
+  </head>
+  <body>
+    <!--*************************** 
+    ||
+      This is the clone of Tech4Dev website, trying out the HTML syntax that I have learnt so far in the ongoing EDSA frontend development training organized by Tech4Dev, Meta and Ekiti State Government**
+
+      This is coded by TOCHUKWU NWOSA started on 25/02/2023
+    ||
+    *****************************-->
+    
+    <!--**********HEADER BLOCK STARTS***********-->
+    <header>
+      <div class="header-wrapper">
+        <div>
+          <a href="/index.html">
+              <img src="/images/tech4dev-logo.svg" alt="Tech4Dev logo" id="header-logo">
+          </a>
+        </div>
+        <nav>
+            <div class="nav-donation">
+              <ul class="navbar">
+                <li>
+                    <a href="/index.html" id="active-link" class="navbar-items">Home</a>
+                </li>
+                <li>
+                  <a href="/about" class="navbar-items">About</a>
+                </li>
+                <li>
+                <a href="#our-programs" class="navbar-items">Our Programs</a> 
+                </li>
+                <li>
+                    <a href="/" class="navbar-items">Get Involved</a>
+                </li>
+                <li>
+                    <a href="/" class="navbar-items">Blog</a>
+                </li>
+                <li>
+                <a href="/" class="navbar-items">Media</a>
+                </li>
+                <li>
+                    <a href="/" class="navbar-items">Contact Us</a>
+                </li>
+                <li>
+                    <a href="/" class="navbar-items">Art</a>
+                </li> 
+              </ul>
+            </div>
+            <div>
+              <button id="donate">Donate</button>
+            </div>
+            <div class="social-icons">
+              <a href="#">
+                      <ion-icon name="logo-youtube" aria-hidden="true"></ion-icon>
+              </a>
+              <a href="#">
+                  <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+              </a>
+              <a href="#">
+                      <ion-icon name="logo-twitter" aria-hidden="true"></ion-icon>
+              </a>
+              <a href="#">
+                      <ion-icon name="logo-linkedin" aria-hidden="true"></ion-icon>
+              </a>
+              <a href="#">
+                      <ion-icon name="logo-facebook" ariel-hidden="true"></ion-icon>
+              </a>
+            </div>
+        </nav>
+      </div>
+    </header>
+    <!--**********HEADER BLOCK ENDS***********-->
+  
+    <!--**********MAIN BLOCK STARTS***********-->
+    <main>
+      <div class="main-article">
+        <article>
+            <h3>Anticipate #DigitalForAllChallenge2.0</h3>
+          <div class="main-article carousel-container">
+
+            <!--***An image carousel is a container (slideshow) of images or info that users can select by clicking a button that directs them forward or backward in the slideshow. An image carousel makes a website more interactive by enhancing the user experience.The collection of images can be automatically changed using a timer or manually when the user clicks the displayed buttons.***-->
+            
+            <div class="mySlides fade">
+                <img src="./images/slider-1.jpg" alt="myslide" width="380">
+            </div>
+            <div class="mySlides fade">
+                <img src="./images/slider-2.png" alt="myslide" width="380">
+            </div>
+            <div class="mySlides fade">
+                <img src="./images/slider-3.jpg" alt="myslide" width="380">
+            </div>
+            <!-- carousel control buttons -->
+            <div class="dots">
+              <button class="slide-btn slide-btn-1"></button>
+              <button class="slide-btn slide-btn-2"></button>
+              <button class="slide-btn slide-btn-3"></button>
+            </div>
+            <!--**** Next and previous buttons *****-->
+          
+          </div>
+        </article>
+      </div>
+      <div class="mission-outreach-wrapper">
+        <!--*********MISSION / VISION BLOCK STARTS*******-->
+          <section>
+            <div class="mission_vision-wrapper"></div>
+              <div class="mission_vision">
+                <div id="mission_vision-img">
+                  <div class="background"></div>
+                  <img src="./images/index-4-children.jpg" alt="children looking at computer" width="380">
+                </div>
+                <div class="our_main">
+                  <div id="vision">
+                  <h3>Our Vision</h3>
+                  <p>To equip Africans with digital and life skills that foster economic prosperity, financial freedom and sustainable development</p>
+                </div>
+                <div id="mission">
+                  <h3>Our Mission</h3>
+                  <p>To create opportunities and platform for Africans to access decent work and entrepreneurship through digital skills empowerment and advocacy</p>
+                </div>
+              </div>              
+            </div>
+          </section>
+        <!--**********MISSION / VISION BLOCK ENDS***********-->
+        
+        <!--**********OUTREACH BLOCK STARTS***********-->
+        <section>
+          <div class="outreach-wrapper"></div>
+            <div class="outreach">
+              <h2 class="header">WE ARE MAKING A BIG DIFFERENCE</h2>
+              <div class="outreach-details">
+                  <div class="details beneficiary">
+                    <ion-icon name="desktop-outline"></ion-icon>
+                    <h4>41,079</h4>
+                    <p>Direct beneficiaries of Tech4Dev’s programmes</p>
+                  </div>
+                  <div class="details indirect">
+                    <ion-icon name="eye-outline"></ion-icon>
+                    <h4>10M+</h4>
+                    <p>Indirect beneficiaries of Tech4Dev’s programmes</p>
+                  </div>
+                  <div class="details state">
+                    <ion-icon name="wifi-outline"></ion-icon>
+                    <h4>36</h4>
+                    <p>States reached</p>
+                  </div>
+                  <div class="details jobs">
+                    <ion-icon name="briefcase-outline"></ion-icon>
+                    <h4>1000+</h4>
+                    <p>Beneficiaries facilitated to suitable jobs</p>
+                  </div>
+                  <div class="details countries">
+                    <ion-icon name="people-outline"></ion-icon>
+                    <h4>15</h4>
+                    <p>African countries reached:
+                      Nigeria, South Africa, Ghana, Kenya and Egypt
+                    </p>
+                  </div>
+                </div>
+              </div>
+        </section>
+      </div>
+      <div class="finance_cop">
+        <p>
+          According to the International Finance Corporation (IFC), about 230 million jobs in Sub-Saharan Africa will require digital skills by 2030. This figure is due to increasing use of technology and automation of jobs. At Tech4Dev, we prepare people for the future of work by creating opportunities for decent work through technology-based training, which include coding skills, deep tech skills, employability skills and basic digital skills
+        </p>
+      </div>
+      <!--**********OUTREACH BLOCK ENDS***********-->
+      
+      <!--**********PROGRAMS BLOCK STARTS***********-->
+      <div class="our-programs-wrapper">
+        <div id="our-programs" class="our-programs">
+          <section>
+            <h2 class="header">OUR PROGRAMS</h2>
+            <div class="programs">
+              <div class="program women-tec">
+                <img src="./images/girls-on-jean.jpg" alt="Girls on purple top with jean trouser" height="250" loading="lazy">
+                <div>
+                  <h3>Women Techsters</h3>
+                  <p>
+                    The Women Techsters initiative is aimed at bridging the digital and technology knowledge divide between men and women as well as ensuring equal access to opportunities for all. We are empowering girls and women across Africa with varying degrees of digital, deep tech and soft skills required within the technology ecosystem.
+                    <br>
+                    <br>
+                    The Women Techsters Initiative will train 5 million across Africa by 2030.
+                  </p>
+                  <p class="learn-more">
+                    <a href="#">Learn More</a>
+                    <span>&gt;</span>
+                  </p>
+                </div>
+              </div>
+              <div class="program emmi">
+                <img src="./images/man-signing-signature.jpeg" alt="Man and Woman signing signature"  height="250" loading="lazy">
+                <div>
+                  <h3>Emerging Market Model Initiative (EMMI)</h3>
+                  <p>
+                    The Emerging Market model will train 36,000 youth over a 1-year period in through a blended learning approach: online and physical through skill training and youth centres across Nigeria. This would be achieved through multi-year collaboration with four strategic Federal Government Ministries and 12 state governments.
+                  </p>
+                  <p class="learn-more">
+                    <a href="#">Learn More</a>
+                    <span>&gt;</span>
+                  </p>
+                </div>
+              </div>
+              <div class="program basic-digital">
+                <img src="./images/group-photo-basic.jpg" alt="group photo basic" height="250" loading="lazy">
+                <div>
+                  <h3>Basic Digital Literacy For Southern Nigeria</h3>
+                  <p>
+                    The BDL-SN is designed to reach 1000 beneficiaries, in 10 rural clusters, across 10 states in Southern Nigeria, targeting 50% vulnerable women and girls, 30% People Living with Disability (PLWD) e.g mobility, speech, polio, etc, and 20% for other vulnerable groups.
+                    <br>
+                    <br>
+                    The training will be implemented across the following Southern States: Ekiti, Oyo, Akwa-Ibom, Delta, Edo, River, Ogun, Abia, Enugu, Anambra
+                  </p>
+                  <p class="learn-more">
+                    <a href="#">Learn More</a>
+                    <span>&gt;</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!--**********PROGRAM BLOCK ENDS***********-->
+      
+      <!--**********PARTNER BLOCK ENDS***********-->
+      <section class="our-partners">
+        <h2 class="header">OUR PARTNERS</h2>
+        <div>
+          <p>logo carousel</p>
+        </div>
+      </section>
+      <!--**********PARTNER BLOCK ENDS***********-->
+      
+      <!--**********CONTACT US BLOCK STARTS***********-->
+      <div class="contact-us">
+        <div class="contact-us_para">
+          <p>If you would like to know more about what we do</p>
+          <a href="#">send us a message</a>
+        </div>
+      </div>
+      <!--**********CONTACT US BLOCK ENDS***********-->
+      
+      <!--**********VIDEO BLOCK STARTS***********-->
+      <div class="video-wrapper">
+        <div class="videos">
+          <div>
+            <iframe width="305" height="230" src="https://www.youtube.com/embed/snJClianGwA" title="Women Techsters  UN Solutions Summit 2019 - Full solution presentation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="lazy" allowfullscreen></iframe>
+          </div>
+          <div>
+            <iframe width="305" height="230" src="https://www.youtube.com/embed/4LASYETL58M" title="Basic Digital Literacy for Rural Clusters in Northern Nigeria Testimonial Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="lazy"  allowfullscreen></iframe>
+          </div>
+          <div>
+            <iframe width="305" height="230" src="https://www.youtube.com/embed/qcZKRUH2KAc" title="Women Techsters Alumni: Fatima Ahmed (From A Chemist to a Woman in Tech)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="lazy"  allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <!--**********VIDEO BLOCK STARTS***********-->
+        
+      <div class="testimonial-wrapper">
+        <section>
+          <h2 class="header">TESTIMONIALS</h2>
+          <div class="testimonial-contents">
+            <div class="testimonial">
+              <img src="./images/bolutife.jpg" alt="a girl smiling" width="300" loading="lazy" class="testimonial-image">
+              <div class="testimonial-description">
+                <p class="message">My name is Bolutife Adeniji. I am a final year law student at the Olabisi Onobanjo University. I have always had an eye for design. I started with graphic design and then proceeded to look out for opportunities to broaden my knowledge in product design.</p>
+                <p class="read-more">
+                  <a href="#">Read More</a>
+                  <span>&gt;</span>
+                </p>
+              </div>
+              <div class="details">
+                <p class="author"><strong>Bolutife Adeniji</strong></p>
+                <p class="description">Women Techsters Bootcamp</p>
+              </div>
+            </div>
+            <div class="testimonial">
+              <img src="./images/arinola.jpg" alt="a girl smiling" width="300" loading="lazy" class="testimonial-image">
+              <div class="testimonial-description">
+                <p class="message">I heard about the Women Techsters Open day Program from my friend. During the program, experienced people were brought in to talk to us, to share their stories, and speak to us on how we can climb the ladder to success in our various chosen careers.</p>
+                <p class="read-more">
+                  <a href="#">Read More</a>
+                  <span>&gt;</span>
+                </p>
+              </div>
+              <div class="details">
+                <p class="author"><strong>Arinola Osagie</strong></p>
+                <p class="description">Women Techsters Bootcamp</p>
+              </div>
+            </div>
+            <div class="testimonial">
+              <img src="./images/folashad.png" alt="a girl smiling" loading="lazy" class="testimonial-image">
+              <div class="testimonial-description">
+                <p class="message">My name is Folashade, and I am 37 years old. For the past eight years, I have desired to be in the technology space but couldn't secure anything concrete because I did not have the prerequisite knowledge to function there</p>
+                <p class="read-more">
+                  <a href="#">Read More</a>
+                  <span>&gt;</span>
+                </p>
+              </div>
+              <div class="details">
+                <p class="author"><strong>Folashade Kelvin-Ikpi</strong></p>
+                <p class="description">Digital Skills for the Workplace Beneficiary</p>
+              </div>
+            </div>
+            <!-- <div class="testimonial">
+              <img src="./images/fatima.jpg" alt="a girl smiling" loading="lazy" class="testimonial-image">
+              <div>
+                <p>I found out about the Women Techsters program through my friend who went through the program as well. I didn’t have any idea about programming or building websites before the training. I was able to learn all these within the period of the program; it was fascinating to be able to build a website on my own.</p>
+                <p class="read-more">
+                  <a href="#">Read More</a>
+                  <span>&gt;</span>
+                </p>
+              </div>
+              <div>
+                <p class="author"><strong>Fatima Ahmed</strong></p>
+                <p class="description">WT-GIZ Cohort 3</p>
+              </div>
+            </div> -->
+          </div>
+        </section>
+      </div>
+      <!--**********COMMENT BLOCK ENDS***********-->
+      
+      <!--**********FOOTER BLOCK STARTS***********-->
+      <footer>
+        <div class="footer-wrapper">
+          <div class="contact-details">
+            <div class="address">
+              <h3 class="header">ADDRESS</h3>
+              <ul class="list-item">
+                <li class="address-list_item">7, Omo Ighodalo Street, Ogudu GRA. Ogudu, Lagos</li>
+                <li  class="address-list_item">Joop Geesinkweg 501, 1114AB Amsterdam-Duivendrecht</li>
+                <li  class="address-list_item">110 W Randol Mill Road State 240 Arlington Texas 76011</li>
+                <li  class="address-list_item">No 9, Tema Street, Wuse Zone 6, Abuja</li>
+              </ul>
+              <a href="mailto:"enquiries@tech4dev.com">enquiries@tech4dev.com</a>
+              <a href="tel: (+234) 904-329-8729">(+234) 904-329-8729</a>
+            </div>
+            <div class="links">
+              <h3 class="header">LINKS</h3>
+              <ul class="list-item">
+                <li class="links-list_item">
+                  <a href="#">About Us</a>
+                </li>
+                <li class="links-list_item">
+                  <a href="#">Get Involved</a>
+                </li>
+                <li class="links-list_item">
+                  <a href="#">Media</a>
+                </li>
+                <li class="links-list_item">
+                  <a href="#">Contact Us</a>
+                </li>
+                <li class="links-list_item">
+                  <a href="#">Vacancies</a>
+                </li>
+                <li class="links-list_item">
+                  <a href="#">Private Policy</a>
+                </li>
+              </ul>
+            </div>
+            <div class="blogs">
+              <h3 class="header">BLOGS</h3>
+              <ul class="list-item">
+                <li class="blog-list_item">
+                    <a href="#">
+                        Tech4Dev Launches research into digital literacy for youth post-pandemic.
+                    </a>
+                </li>
+                <li class="blog-list_item">
+                    <a href="#">
+                        Tech4Dev Partners with Federal Ministry of Youth and Sports.
+                    </a>
+                </li>
+               <li class="blog-list_item">
+                <a href="#">
+                    Tech4Dev Partners with Federal Ministry of Youth and Sports.</a>
+                </li>
+                <li class="blog-list_item">
+                    <a href="#">
+                        Why we need more women in tech in Nigeria
+                    </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-last-article">
+            <div class="copyright item">
+              <p>@copy2022 Tech4Dev. All rights reserved.</p>
+            </div>
+            <div class="item">
+              <button>Download brochure</button>
+            </div>
+            <div class="social-icons item">
+                <a href="#">
+                        <ion-icon name="logo-youtube" aria-hidden="true"></ion-icon>
+                </a>
+                <a href="#">
+                    <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+                </a>
+                <a href="#">
+                        <ion-icon name="logo-twitter" aria-hidden="true"></ion-icon>
+                </a>
+                <a href="#">
+                        <ion-icon name="logo-linkedin" aria-hidden="true"></ion-icon>
+                </a>
+                <a href="#">
+                        <ion-icon name="logo-facebook" ariel-hidden="true"></ion-icon>
+                </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--**********FOOTER BLOCK ENDS***********-->
+      </div>
+      <p class="back-to-top active">
+        <a href="#">
+          <img src="./images/arrow-back-to-top.svg" alt="arrow back to top">
+        </a>
+      </p>
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
